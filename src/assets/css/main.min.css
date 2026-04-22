@@ -8987,10 +8987,13 @@ figure {
 }
 
 .Slider__title {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
     font-size: 1.69rem;
     font-weight: 700;
     margin: 0;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .Slider__caption {
@@ -9007,30 +9010,35 @@ figure {
 }
 
 .Slider__button {
-    position: relative;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
     display: inline-block;
     overflow: hidden;
     font-size: .8rem;
     color: #fff;
-    background-color: transparent;
+    background-color: #fe9f38;
+    border: 1px solid transparent;
     padding: .3rem .5rem;
     text-transform: uppercase;
     font-weight: 500;
-    margin-top: .5rem;
-    border: .063rem solid #fe9f38
 }
+
+
+
 
 .Slider__button:hover {
     color: #fff;
     background-color: #fe9f38;
-    -webkit-transform: translateY(.188rem);
-    -ms-transform: translateY(.188rem);
-    transform: translateY(.188rem);
+    -webkit-transform: translateY(-.188rem);
+    -ms-transform: translateY(-.188rem);
+    transform: translateY(-.188rem);
     -webkit-box-shadow: 0 .563rem 1.063rem -.188rem rgba(0, 0, 0, .13);
     box-shadow: 0 .563rem 1.063rem -.188rem rgba(0, 0, 0, .13)
 }
 
 .Slider__item {
+    position: relative;
     height: -webkit-calc(100vh - 250px);
     height: calc(100vh - 250px)
 }
@@ -9688,3 +9696,4 @@ only screen and (min-resolution:2dppx) {
         background-size: cover
     }
 }
+
